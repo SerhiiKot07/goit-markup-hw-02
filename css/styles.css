@@ -1,0 +1,57 @@
+:root {
+  --primary-text-color: #212121; /* основний колір тексту, заголовки */
+  --title-text-color: #757575; /* вторинний колір тексту */
+  --aсcent-text-color: #2196f3; /* акцент, синій колір */
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+}
+
+/* LOGO */
+.logo-header {
+  color: #000000;
+  font: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+}
+.web {
+  color: var(--aсcent-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* SITE-NAV */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--aсcent-text-color);
+}
+
+/* HERO */
+.hero {
+  color: #ffffff;
+  background-color: #2f303a;
+  text-transform: uppercase;
+}
+
+/* FEATURES */
+.features .features-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.features .features-text {
+  color: var(--title-text-color);
+}
+
+/* Чим ми займаємося */
+.do-we-do-title {
+  font-size: 36px;
+}
