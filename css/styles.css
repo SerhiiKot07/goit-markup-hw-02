@@ -1,24 +1,36 @@
 :root {
   --primary-text-color: #212121; /* основний колір тексту, заголовки */
-  --title-text-color: #757575; /* вторинний колір тексту */
+  --paragraf-text-color: #757575; /* вторинний колір тексту */
   --aсcent-text-color: #2196f3; /* акцент, синій колір */
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+  font-size: 14px;
+}
+
+button {
+  color: #ffffff;
+  background-color: var(--aсcent-text-color);
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* LOGO */
 .logo-header {
   color: #000000;
-  font: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
+
 .web {
   color: var(--aсcent-text-color);
+}
+
+.link {
+  text-decoration: none;
 }
 
 .list {
@@ -27,8 +39,10 @@ body {
 
 /* SITE-NAV */
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
+  font-weight: 500;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--aсcent-text-color);
@@ -39,19 +53,60 @@ body {
   color: #ffffff;
   background-color: #2f303a;
   text-transform: uppercase;
+  font-size: 44px;
+}
+
+button:hover,
+button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /* FEATURES */
 .features .features-title {
-  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .features .features-text {
-  color: var(--title-text-color);
+  color: var(--paragraf-text-color);
+  font-weight: 400;
+  text-align: left;
 }
 
 /* Чим ми займаємося */
-.do-we-do-title {
+.team-title {
   font-size: 36px;
+  font-weight: 700;
+}
+
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team .team-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.team .team-profesion {
+  color: var(--paragraf-text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Footer */
+.contacts {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo-footer {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
 }
