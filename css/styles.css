@@ -10,19 +10,13 @@ body {
   font-size: 14px;
 }
 
-button {
-  color: #ffffff;
-  background-color: var(--aсcent-text-color);
-  font-weight: 700;
-  font-size: 16px;
-}
-
 /* LOGO */
 .logo-header {
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
+  line-height: 0.86;
 }
 
 .web {
@@ -41,6 +35,7 @@ button {
 .site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
@@ -54,32 +49,42 @@ button {
   background-color: #2f303a;
   text-transform: uppercase;
   font-size: 44px;
+  line-height: 1.36;
+}
+
+button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
 }
 
 button:hover,
 button:focus {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #188ce8;
   font-weight: 700;
   font-size: 16px;
 }
 
 /* FEATURES */
 .features .features-title {
-  font-weight: 700;
   text-transform: uppercase;
+  line-height: 1.14;
 }
 
 .features .features-text {
   color: var(--paragraf-text-color);
-  font-weight: 400;
   text-align: left;
+  line-height: 1.71;
 }
 
 /* Чим ми займаємося */
 .team-title {
   font-size: 36px;
-  font-weight: 700;
+  line-height: 1.17;
 }
 
 /* Наша команда */
@@ -89,19 +94,39 @@ button:focus {
 .team .team-name {
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.19;
 }
 .team .team-profesion {
   color: var(--paragraf-text-color);
   font-size: 16px;
-  font-weight: 400;
+  line-height: 1.19;
 }
 
 /* Footer */
 .contacts {
-  color: #ffffff;
   background-color: #2f303a;
-  font-weight: 400;
+}
+
+.contacts .map {
+  color: #ffffff;
   font-style: normal;
+  line-height: 1.71;
+}
+
+.contacts .map:hover,
+.contacts .map:focus {
+  color: var(--aсcent-text-color);
+}
+
+.contacts .contacts-info {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.contacts .contacts-info:hover,
+.contacts .contacts-info:focus {
+  color: var(--aсcent-text-color);
 }
 
 .logo-footer {
@@ -109,4 +134,30 @@ button:focus {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.19;
+}
+
+/* PORTFOLIO */
+/* buttons */
+.filters .filters-btn {
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.67;
+}
+.filters .filters-btn:hover,
+.filters .filters-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* Projects */
+.projects .project-name {
+  font-size: 18px;
+  line-height: 2;
+}
+.type-project {
+  color: var(--paragraf-text-color);
+  font-size: 16px;
+  line-height: 1.9;
 }

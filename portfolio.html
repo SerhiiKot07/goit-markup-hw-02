@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
   </head>
+
   <body>
     <!-- Верхня лінія / Top line -->
 
     <header>
       <nav>
-        <a lang="en" href="/" class="logo-header"
+        <a lang="en" href="/" class="logo-header link"
           ><span class="web">Web</span>Studio</a
         >
         <ul class="site-nav list">
@@ -31,18 +38,18 @@
 
     <main>
       <!-- Filters -->
-      <section>
+      <section class="filters">
         <h1 hidden>Portfolio</h1>
         <ul class="list">
-          <li><button type="button">Усі</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+          <li><button type="button" class="filters-btn">Усі</button></li>
+          <li><button type="button" class="filters-btn">Веб-сайти</button></li>
+          <li><button type="button" class="filters-btn">Додатки</button></li>
+          <li><button type="button" class="filters-btn">Дизайн</button></li>
+          <li><button type="button" class="filters-btn">Маркетинг</button></li>
         </ul>
       </section>
       <!-- Projects -->
-      <section>
+      <section class="projects-list">
         <ul class="list">
           <li>
             <img
@@ -51,8 +58,8 @@
               width="370"
               height="294"
             />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-name">Технокряк</h2>
+            <p class="type-project">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -61,8 +68,8 @@
               width="370"
               height="294"
             />
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+            <p class="type-project">Дизайн</p>
           </li>
           <li>
             <img
@@ -71,8 +78,8 @@
               width="370"
               height="294"
             />
-            <h2>Ресторан Seafood</h2>
-            <p>Додаток</p>
+            <h2 class="project-name">Ресторан Seafood</h2>
+            <p class="type-project">Додаток</p>
           </li>
           <li>
             <img
@@ -81,8 +88,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт Prime</h2>
-            <p>Маркетинг</p>
+            <h2 class="project-name">Проєкт Prime</h2>
+            <p class="type-project">Маркетинг</p>
           </li>
           <li>
             <img
@@ -91,8 +98,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт Boxes</h2>
-            <p>Додаток</p>
+            <h2 class="project-name">Проєкт Boxes</h2>
+            <p class="type-project">Додаток</p>
           </li>
           <li>
             <img
@@ -101,8 +108,8 @@
               width="370"
               height="294"
             />
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="project-name">Inspiration has no Borders</h2>
+            <p class="type-project">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -111,8 +118,8 @@
               width="370"
               height="294"
             />
-            <h2>Видання Limited Edition</h2>
-            <p>Дизайн</p>
+            <h2 class="project-name">Видання Limited Edition</h2>
+            <p class="type-project">Дизайн</p>
           </li>
           <li>
             <img
@@ -121,8 +128,8 @@
               width="370"
               height="294"
             />
-            <h2>Проєкт LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="project-name">Проєкт LAB</h2>
+            <p class="type-project">Маркетинг</p>
           </li>
           <li>
             <img
@@ -131,8 +138,8 @@
               width="370"
               height="294"
             />
-            <h2>Growing Business</h2>
-            <p>Додаток</p>
+            <h2 class="project-name">Growing Business</h2>
+            <p class="type-project">Додаток</p>
           </li>
         </ul>
       </section>
@@ -140,18 +147,29 @@
 
     <!-- Підвал / Footer -->
 
-    <footer>
-      <a href="/">WebStudio</a>
+    <footer class="contacts">
+      <a lang="en" href="/" class="logo-footer link"
+        ><span class="web">Web</span>Studio</a
+      >
       <address>
         <a
           href="https://goo.gl/maps/QRH2RzH7axmgxvUn7"
           target="_blank"
           rel="noreferrer noopener"
+          class="map link"
           >м. Київ, пр-т Лесі Українки, 26</a
         >
         <ul class="list">
-          <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="info@devstudio.com" class="contacts-info link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="+380961111111" class="contacts-info link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
@@ -212,31 +230,31 @@
 
 + «C3» В стилях відсутній !important.
 
-«C4» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в макеті (зміна кольору).
++ «C4» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в макеті (зміна кольору).
 
-«С5» Текст контактів в хедері і футері змінює колір при ховері і фокусі.
++ «С5» Текст контактів в хедері і футері змінює колір при ховері і фокусі.
 
-«C6» Для зберігання палітри кольорів макета (текст, фон, виділення) використовуються CSS-змінні.
++ «C6» Для зберігання палітри кольорів макета (текст, фон, виділення) використовуються CSS-змінні.
 
-«С7» Для елемента <body> задана властивість font-family з домінантним шрифтом на макеті Roboto.
++ «С7» Для елемента <body> задана властивість font-family з домінантним шрифтом на макеті Roboto.
 
-«С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.
++ «С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.
 
-«С9» Сімейство шрифтів Roboto явно задане тільки для елемента <body>, інші елементи наслідують його.
++ «С9» Сімейство шрифтів Roboto явно задане тільки для елемента <body>, інші елементи наслідують його.
 
-«С10» Для елемента <body> задана властивість color з кольором тексту, домінантним на макеті. Решта тексту наслідує або перекриває це значення.
++ «С10» Для елемента <body> задана властивість color з кольором тексту, домінантним на макеті. Решта тексту наслідує або перекриває це значення.
 
-«С11» Розмір шрифту (властивість font-size) всіх текстових елементів точно відповідає значенням з макета.
++ «С11» Розмір шрифту (властивість font-size) всіх текстових елементів точно відповідає значенням з макета.
 
-«С12» Висота рядка (властивість line-height) всіх текстових елементів точно відповідає значенням з макета і задана як множник, а не в px.
++ «С12» Висота рядка (властивість line-height) всіх текстових елементів точно відповідає значенням з макета і задана як множник, а не в px.
 
-«С13» Колір (властивість color) всіх текстових елементів точно відповідає значенням з макета.
++ «С13» Колір (властивість color) всіх текстових елементів точно відповідає значенням з макета.
 
-«С14» Вага шрифту (властивість font-weight) всіх текстових елементів точно відповідає значенням з макета.
++ «С14» Вага шрифту (властивість font-weight) всіх текстових елементів точно відповідає значенням з макета.
 
-«С15» Вага шрифту (властивість font-weight) явно вказана тільки, якщо значення в макеті відрізняється від стандартного для цього елемента в браузері.
++ «С15» Вага шрифту (властивість font-weight) явно вказана тільки, якщо значення в макеті відрізняється від стандартного для цього елемента в браузері.
 
-«С16» Кнопкам задана властивість cursor зі значенням pointer.
++ «С16» Кнопкам задана властивість cursor зі значенням pointer.
 
-«С17» У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400.
++ «С17» У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400.
 -->
